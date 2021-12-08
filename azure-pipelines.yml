@@ -24,7 +24,7 @@ steps:
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
-     command: 'nmp install'
+     command: 'npm install'
      verbose: true
    
 
