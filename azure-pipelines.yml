@@ -22,9 +22,10 @@ steps:
     version: '5.x'
 
 - task: Npm@1
-  displayName: 'Run npm install'
-  inputs:
-    verbose: false
+ inputs:
+     command: 'nmp install'
+     verbose: true
+   displayName: 'Install npm package'
 
 - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
   displayName: 'Compile Sass assets'
